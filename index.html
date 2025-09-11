@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kristen Christiansen — Cybersecurity Portfolio</title>
+  <meta name="description" content="Hands-on security projects: VIP event insider threat policy, honeypot, log anomaly detection, and security headers scanner."/>
+  <meta property="og:title" content="Kristen Christiansen — Cybersecurity Portfolio"/>
+  <meta property="og:description" content="Hands-on security projects and code."/>
+  <meta property="og:type" content="website"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
+  <header class="wrap header">
+    <div class="brand">
+      <span class="badge">CYBERSECURITY</span>
+      <h1>Kristen Christiansen</h1>
+      <p class="lede">Hands-on projects that show how I think, build, and defend.</p>
+      <nav class="links">
+        <a href="mailto:">Email</a>
+        <a href="https://github.com/khchristiansen91-spec/cybersecurity-portfolio">GitHub</a>
+        <!-- add LinkedIn/website later -->
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="grid">
+        <!-- 01 -->
+        <article class="card">
+          <div class="card-top">
+            <div class="emoji">🍿️</div>
+            <h3>Insider Threat Mitigation for VIP Events</h3>
+            <p>Policy framework + case study for reducing insider risk at high-profile events.</p>
+          </div>
+          <ul class="meta">
+            <li>Focus: Policy, Threat Modeling, Insider Risk</li>
+            <li>Deliverable: PDF + README</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="01-insider-threat-vip-events/Insider_Threat_Mitigation_VIP_Events.pdf" target="_blank">Read the PDF</a>
+            <a class="btn ghost" href="01-insider-threat-vip-events/">Repo Folder</a>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="card">
+          <div class="card-top">
+            <div class="emoji">🔵️</div>
+            <h3>HoneyTrap Honeypot (Flask)</h3>
+            <p>Deceptive login portal that logs attempts for analysis; Docker-ready.</p>
+          </div>
+          <ul class="meta">
+            <li>Stack: Python, Flask, Docker</li>
+            <li>Focus: Detection, Deception</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="02-honeytrap-honeypot/README.md">How to Run</a>
+            <a class="btn ghost" href="02-honeytrap-honeypot/">Repo Folder</a>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="card">
+          <div class="card-top">
+            <div class="emoji">📈</div>
+            <h3>Log Anomaly Detection</h3>
+            <p>Generates auth logs and trains Isolation Forest to surface suspicious events.</p>
+          </div>
+          <ul class="meta">
+            <li>Stack: Python, Pandas, scikit-learn</li>
+            <li>Focus: ML for Security</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="03-log-anomaly-detection/README.md">How to Run</a>
+            <a class="btn ghost" href="03-log-anomaly-detection/">Repo Folder</a>
+          </div>
+        </article>
+
+        <!-- 04 -->
+        <article class="card">
+          <div class="card-top">
+            <div class="emoji">🧪</div>
+            <h3>Security Headers Scanner</h3>
+            <p>CLI to check CSP, HSTS, and other critical headers across multiple targets.</p>
+          </div>
+          <ul class="meta">
+            <li>Stack: Python, requests, Threads</li>
+            <li>Focus: AppSec, Automation</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="04-security-headers-scanner/README.md">How to Run</a>
+            <a class="btn ghost" href="04-security-headers-scanner/">Repo Folder</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">About Me</h2>
+      <p>I love turning security theory into working demos. I design clear policies, build tools that catch sneaky behavior, and explain the why behind every control.</p>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© 2025 Kristen Christiansen · MIT License · Built on GitHub Pages</p>
+  </footer>
+</body>
+</html>
