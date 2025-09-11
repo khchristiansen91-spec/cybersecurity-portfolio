@@ -1,28 +1,54 @@
 # Security Headers Scanner
 
-This project contains a simple command-line tool that scans web servers for common HTTP security headers and reports their presence or absence. The goal is to teach how to automate security header checks and highlight insecure configurations.
+This command-line tool scans one or more websites to check for the presence of critical HTTP security headers. It's a straightforward way to highlight misconfigured or missing headers and to practice automating security assessments.
 
 ## Features
 
-- Accepts a single URL or a list of URLs from a text file.
-- Sends HTTP GET requests and captures response headers using Python's `requests` library.
-- Checks for important security headers such as:
-  - Content-Security-Policy (CSP)
-  - Strict-Transport-Security (HSTS)
-  - X-Content-Type-Options
-  - X-Frame-Options
-  - X-XSS-Protection
-  - Referrer-Policy and Permissions-Policy
-- Produces a simple report listing which headers are present, missing, or misconfigured.
-- Outputs results to the console; future versions could generate a CSV or HTML report.
+- **Multiple targets:** Accept a single URL or a list of URLs via command-line arguments.
+- **Concurrent scanning:** Use a thread pool to scan multiple sites in parallel for faster results.
+- **Checks essential headers:** Content-Security-Policy (CSP), Strict-Transport-Security (HSTS), X-Content-Type-Options, X-Frame-Options, Referrer-Policy and Permissions-Policy.
+- **Clear output:** Prints each target's HTTP status and the value of each header (or `MISSING` if not set).
 
 ## Usage
 
-1. Install dependencies from `requirements.txt` (e.g., `pip install -r requirements.txt`).
-2. Run `python scanner.py --url https://example.com` to scan a single site.
-3. Or run `python scanner.py --file urls.txt` to scan multiple sites listed in `urls.txt`.
-4. Review the console output to see which security headers each site has or lacks.
+1. Install dependencies (Python 3):
 
-## Disclaimer
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-This scanner is for educational and testing purposes. Always obtain permission before scanning or assessing systems you do not own. The script is intentionally lightweight and does not account for all possible security headers or complex configurations.
+2. Run the scanner against one or more HTTPS sites:
+
+   ```bash
+   python scanner.py https://example.com https://another-site.org
+   ```
+
+   Use the `-t` flag to adjust the number of concurrent threads (default 5):
+
+   ```bash
+   python scanner.py -t 10 https://example.com https://another-site.org
+   ```
+
+3. Example output:
+
+   ```
+   GET https://example.com -> 200
+   Content-Security-Policy: default-src 'self'
+   Strict-Transport-Security: max-age=63072000; includeSubDomains
+   X-Content-Type-Options: nosniff
+   X-Frame-Options: SAMEORIGIN
+   Referrer-Policy: no-referrer
+   Permissions-Policy: MISSING
+   ```
+
+## Extending the tool
+
+This scanner is deliberately simple. You can extend it by:
+
+- Adding checks for additional headers (e.g. Cache-Control or X-XSS-Protection).
+- Saving results to a CSV or JSON file instead of printing them.
+- Integrating it into a continuous integration pipeline to catch misconfigurations during development.
+
+---
+
+*This project is for educational and ethical testing purposes. Only scan sites you own or are authorized to test.*
