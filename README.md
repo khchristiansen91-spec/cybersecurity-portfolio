@@ -1,10 +1,29 @@
 # Cybersecurity Portfolio
 
-This repository contains four projects demonstrating my cybersecurity skills:
+This repository hosts four independent projects showcasing my hands-on skills in cybersecurity, from policy and threat modelling to Python automation and machine learning.
 
-1. **Insider Threat Mitigation for VIP Events** – A policy case study focusing on insider threat controls at high-profile events. It covers security awareness training, least privilege, anonymous reporting, and continuous monitoring with anomaly detection.
-2. **HoneyTrap Honeypot** – A lightweight Flask honeypot that simulates a login page, logs connection attempts and user agents, and provides a simple interface to view logs. Useful for understanding attacker behavior and logging basics.
-3. **Log Anomaly Detection** – A Python demo using synthetic authentication logs to train an Isolation Forest model to flag anomalous user activity. Includes log generation, feature engineering, and model training.
-4. **Security Headers Scanner** – A CLI tool that checks a target website’s HTTP response headers (like Content-Security-Policy, Strict-Transport-Security, X-Frame-Options) and reports missing values, highlighting insecure configurations.
+## Projects
 
-Each project will have its own directory with a README and, where appropriate, code and configuration files.
+1. **Insider Threat Mitigation for VIP Events**  
+   A case study and security policy framework for protecting high-profile events from insider threats. Includes a detailed PDF report and an executive summary.
+
+2. **HoneyTrap Honeypot**  
+   A lightweight Flask honeypot that simulates a login portal, logs unauthorized attempts, and exposes a `/logs` endpoint for analysis. An example of deception and logging techniques.
+
+3. **Log Anomaly Detection**  
+   A Python mini-project that generates synthetic authentication logs, engineers features, trains an Isolation Forest model, and outputs anomalies. Demonstrates how to build ML-based detection pipelines.
+
+4. **Security Headers Scanner**  
+   A CLI tool that checks websites for common HTTP security headers (CSP, HSTS, X-Frame-Options, etc.) and reports missing or insecure configurations. Teaches automation and secure configuration verification.
+
+Each project resides in its own directory with a README and the necessary code files. See each project’s README for setup and usage instructions.
+
+## About Me
+
+Hi, I'm Kristen, a security enthusiast and artist with a passion for blending creativity and technical expertise. This portfolio demonstrates my ability to analyze threats, design mitigation strategies, and build practical tools. Feel free to explore and reach out if you'd like to collaborate or learn more.
+
+## Contributing & License
+
+Contributions are welcome! If you find something interesting or want to improve these projects, feel free to open an issue or pull request.
+
+This work is licensed under the [MIT License](LICENSE).
