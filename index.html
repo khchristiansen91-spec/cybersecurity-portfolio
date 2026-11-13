@@ -3,258 +3,122 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kristen Christiansen — Security Portfolio</title>
-  <!-- Readable, calm typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Kristen Christiansen | Security portfolio</title>
+  <meta name="description" content="Healthcare operations and cybersecurity portfolio of Kristen Christiansen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Simple top nav -->
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <div class="brand">
-        <span class="brand-dot" aria-hidden="true"></span>
-        <a href="#" class="brand-name">Kristen Christiansen</a>
-      </div>
-      <nav class="nav">
+  <header class="top">
+    <div class="wrap top-inner">
+      <a href="#" class="top-name">Kristen Christiansen</a>
+      <nav class="top-nav" aria-label="Sections">
         <a href="#projects">Projects</a>
-        <a href="#resume">Résumé</a>
+        <a href="#certificates">Certificates</a>
         <a href="#about">About</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO: tagline across the top -->
-  <section class="hero">
-    <!-- Tagline spans the full width -->
-    <div class="wrap">
-      <h1 class="hero-title">Security with an artist’s eye</h1>
-      <p class="hero-subtitle">Calm, clear, human‑centered defensive work.</p>
-    </div>
-    <!-- Actions below the tagline -->
-    <div class="wrap hero-inner">
-      <div class="hero-content">
+  <main>
+    <section class="hero wrap">
+      <h1 class="hero-name"><span>Kristen</span><span>Christiansen</span></h1>
+      <div class="hero-side">
+        <p class="hero-intro">Healthcare operations and security. I keep patient data safe and make messy processes actually work.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="resume.pdf" download>Download Résumé (PDF)</a>
+          <a class="btn btn-solid" href="resume.pdf" download>Download résumé</a>
+          <a class="btn btn-line" href="mailto:khchristiansen91@gmail.com">Email me</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <main class="wrap">
-    <!-- Featured Projects Section -->
-    <section id="projects" class="section">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="grid">
-        <!-- Project 1 -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🛡️</div>
-            <h3>VIP Event Insider‑Threat Policy</h3>
-            <p>Least‑privilege access, reporting pathways, and continuous monitoring for high‑stakes events.</p>
-            <ul class="meta">
-              <li>Focus: People, Process & Detection</li>
-              <li>Deliverables: Policy doc, training plan</li>
-            </ul>
-            <div class="actions">
-              <a class="btn btn-ghost" href="01-insider-threat-vip-events/README.md" target="_blank" rel="noopener">Details</a>
-              <a class="btn btn-primary" href="01-insider-threat-vip-events/" target="_blank" rel="noopener">Repo</a>
-            </div>
-          </div>
-        </article>
-        <!-- Project 2 -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🕵️</div>
-            <h3>HoneyTrap Honeypot</h3>
-            <p>Deceptive services attract misuse inside a segmented lab, with alerting on interaction.</p>
-            <ul class="meta">
-              <li>Focus: Detection engineering</li>
-              <li>Deliverables: Config, runbook</li>
-            </ul>
-            <div class="actions">
-              <a class="btn btn-ghost" href="02-honeytrap-honeypot/README.md" target="_blank" rel="noopener">Details</a>
-              <a class="btn btn-primary" href="02-honeytrap-honeypot/" target="_blank" rel="noopener">Repo</a>
-            </div>
-          </div>
-        </article>
-        <!-- Project 3 -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">📊</div>
-            <h3>Log Anomaly Spotter</h3>
-            <p>Baselines user access and flags deviations using statistical methods and intuitive workflows.</p>
-            <ul class="meta">
-              <li>Focus: Practical detection</li>
-              <li>Deliverables: Rules, dashboard</li>
-            </ul>
-            <div class="actions">
-              <a class="btn btn-ghost" href="03-log-anomaly-detection/README.md" target="_blank" rel="noopener">Details</a>
-              <a class="btn btn-primary" href="03-log-anomaly-detection/" target="_blank" rel="noopener">Repo</a>
-            </div>
-          </div>
-        </article>
-        <!-- Project 4 -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🔒</div>
-            <h3>Security Headers Auditor</h3>
-            <p>CLI tool and checklist for consistent HTTP security headers during reviews.</p>
-            <ul class="meta">
-              <li>Focus: Web hardening</li>
-              <li>Deliverables: Checklist, sample config</li>
-            </ul>
-            <div class="actions">
-              <a class="btn btn-ghost" href="04-security-headers-scanner/README.md" target="_blank" rel="noopener">Details</a>
-              <a class="btn btn-primary" href="04-security-headers-scanner/" target="_blank" rel="noopener">Repo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 5 -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🤖</div>
-            <h3>AI Security Assistant</h3>
-            <p>Large language models parse logs, triage alerts, and generate security policies to accelerate incident response.</p>
-            <ul class="meta">
-              <li>Focus: AI & Automation</li>
-              <li>Status: In progress</li>
-              <li>Planned: Python script, policy generator, dataset</li>
-            </ul>
-            <div class="actions">
-              <a class="btn btn-ghost" href="07-ai-security-assistant/README.md" target="_blank" rel="noopener">Details</a>
-              <a class="btn btn-primary" href="07-ai-security-assistant/" target="_blank" rel="noopener">Repo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 6 -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🕵️</div>
-            <h3>Hidden Malware Hunt</h3>
-            <p>Advanced forensics and network analysis uncover a stealthy backdoor hidden in benign traffic and memory dumps.</p>
-            <ul class="meta">
-              <li>Focus: Threat Hunting & Forensics</li>
-              <li>Status: In progress</li>
-              <li>Planned: Analysis report, YARA rules, detection script</li>
-            </ul>
-            <div class="actions">
-              <a class="btn btn-ghost" href="08-hidden-malware-hunt/README.md" target="_blank" rel="noopener">Details</a>
-              <a class="btn btn-primary" href="08-hidden-malware-hunt/" target="_blank" rel="noopener">Repo</a>
-            </div>
-          </div>
-        </article>
-
+    <section id="projects" class="block wrap">
+      <div class="block-head">
+        <h2>Projects</h2>
+        <p>Hands-on work in detection, web security, and policy. Each one links to its code or write-up on GitHub.</p>
       </div>
+      <ol class="projects" role="list">
+        <li class="project">
+          <h3>VIP event insider-threat policy</h3>
+          <p class="project-desc">A case study and security policy for protecting high-profile events from people on the inside: least-privilege access, clear reporting paths, and ongoing monitoring.</p>
+          <p class="project-area">Policy and risk</p>
+          <a class="project-link" href="https://github.com/khchristiansen91-spec/cybersecurity-portfolio/tree/main/01-insider-threat-vip-events" target="_blank" rel="noopener">Read the report</a>
+        </li>
+        <li class="project">
+          <h3>HoneyTrap honeypot</h3>
+          <p class="project-desc">A fake login page built in Python and Flask that attracts unauthorized attempts and logs every one for analysis. Runs in Docker.</p>
+          <p class="project-area">Detection</p>
+          <a class="project-link" href="https://github.com/khchristiansen91-spec/cybersecurity-portfolio/tree/main/02-honeytrap-honeypot" target="_blank" rel="noopener">View code</a>
+        </li>
+        <li class="project">
+          <h3>Log anomaly detection</h3>
+          <p class="project-desc">Generates realistic login logs, then trains a machine learning model (Isolation Forest) to flag the activity that doesn't fit.</p>
+          <p class="project-area">Machine learning</p>
+          <a class="project-link" href="https://github.com/khchristiansen91-spec/cybersecurity-portfolio/tree/main/03-log-anomaly-detection" target="_blank" rel="noopener">View code</a>
+        </li>
+        <li class="project">
+          <h3>Security headers scanner</h3>
+          <p class="project-desc">A command-line tool that checks websites for missing or weak HTTP security headers like CSP and HSTS.</p>
+          <p class="project-area">Web security</p>
+          <a class="project-link" href="https://github.com/khchristiansen91-spec/cybersecurity-portfolio/tree/main/04-security-headers-scanner" target="_blank" rel="noopener">View code</a>
+        </li>
+        <li class="project">
+          <h3>SQL injection demo</h3>
+          <p class="project-desc">A deliberately vulnerable login page and the exploit that gets past it, showing exactly why unsafe database queries are dangerous and how to fix them.</p>
+          <p class="project-area">Web security</p>
+          <a class="project-link" href="https://github.com/khchristiansen91-spec/cybersecurity-portfolio/tree/main/05-sql-injection-demo" target="_blank" rel="noopener">View code</a>
+        </li>
+        <li class="project">
+          <h3>AI security assistant<span class="status">In progress</span></h3>
+          <p class="project-desc">Using a large language model to summarize security logs, triage alerts, and draft policies.</p>
+          <p class="project-area">AI and automation</p>
+          <a class="project-link" href="https://github.com/khchristiansen91-spec/cybersecurity-portfolio/tree/main/07-ai-security-assistant" target="_blank" rel="noopener">See the plan</a>
+        </li>
+        <li class="project">
+          <h3>Hidden malware hunt<span class="status">In progress</span></h3>
+          <p class="project-desc">A forensics investigation into a stealthy backdoor hiding in normal network traffic and memory.</p>
+          <p class="project-area">Threat hunting</p>
+          <a class="project-link" href="https://github.com/khchristiansen91-spec/cybersecurity-portfolio/tree/main/08-hidden-malware-hunt" target="_blank" rel="noopener">See the plan</a>
+        </li>
+      </ol>
     </section>
 
-    <!-- Resume Section with download only -->
-    <section id="resume" class="section resume-section">
-      <h2 class="section-title">Résumé</h2>
-      <p>You can download my résumé here:</p>
-      <a class="btn btn-primary" href="resume.pdf" download>Download Résumé (PDF)</a>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section certifications">
-      <h2 class="section-title">Certifications</h2>
-      <div class="grid">
-        <!-- Microsoft Cybersecurity Analyst -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🔐</div>
-            <h3>Microsoft Cybersecurity Analyst</h3>
-            <p>Professional certificate covering identity, threat mitigation, Azure, compliance, and SC‑900 exam preparation.</p>
-            <a class="btn btn-ghost" href="microsoft_cybersecurity_analyst.pdf" download>Download Cert</a>
-          </div>
-        </article>
-        <!-- CompTIA A+ Core 1 -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🖥️</div>
-            <h3>CompTIA A+ Core 1</h3>
-            <p>IT fundamentals, hardware configuration, networking, virtualization, and security essentials.</p>
-            <a class="btn btn-ghost" href="comptia_a_plus_core1.pdf" download>Download Cert</a>
-          </div>
-        </article>
-        <!-- CompTIA A+ Core 2 -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">💻</div>
-            <h3>CompTIA A+ Core 2</h3>
-            <p>Operating systems, troubleshooting, security, and IT operational procedures.</p>
-            <a class="btn btn-ghost" href="comptia_a_plus_core2.pdf" download>Download Cert</a>
-          </div>
-        </article>
-        <!-- CompTIA Security+ -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🔒</div>
-            <h3>CompTIA Security+</h3>
-            <p>Risk management, cryptography, secure networks, cloud and wireless security, and incident response.</p>
-            <a class="btn btn-ghost" href="comptia_security_plus.pdf" download>Download Cert</a>
-          </div>
-        </article>
-        <!-- CompTIA CySA+ -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🛡️</div>
-            <h3>CompTIA CySA+</h3>
-            <p>Detection, analysis, and response to cybersecurity threats, vulnerability management, and incident handling.</p>
-            <a class="btn btn-ghost" href="comptia_cysa.pdf" download>Download Cert</a>
-          </div>
-        </article>
-        <!-- Google Cybersecurity -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🌐</div>
-            <h3>Google Cybersecurity</h3>
-            <p>Eight‑course program covering foundations, risk management, networking, Linux, SQL, SIEM tools, and Python automation.</p>
-            <a class="btn btn-ghost" href="google_cybersecurity.pdf" download>Download Cert</a>
-          </div>
-        </article>
-        <!-- ISC² Security Principles -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">📜</div>
-            <h3>ISC² Security Principles</h3>
-            <p>Fundamental security principles and best practices for protecting organizational assets.</p>
-            <a class="btn btn-ghost" href="isc2_security_principles.pdf" download>Download Cert</a>
-          </div>
-        </article>
-        <!-- Homeland Security & Cybersecurity Connection -->
-        <article class="card">
-          <div class="card-body">
-            <div class="emoji" aria-hidden="true">🏛️</div>
-            <h3>Homeland Security & Cybersecurity</h3>
-            <p>Course on the intersection of homeland security and cybersecurity.</p>
-            <a class="btn btn-ghost" href="homeland_security_cybersecurity.pdf" download>Download Cert</a>
-          </div>
-        </article>
+    <section id="certificates" class="block wrap">
+      <div class="block-head">
+        <h2>Certificates &amp; training</h2>
+        <p>Tap one to open the certificate.</p>
       </div>
+      <ul class="certs" role="list">
+        <li><a href="microsoft_cybersecurity_analyst.pdf" target="_blank" rel="noopener"><span class="cert-name">Microsoft Cybersecurity Analyst</span><span class="cert-kind">Professional certificate, Coursera</span></a></li>
+        <li><a href="comptia_cysa.pdf" target="_blank" rel="noopener"><span class="cert-name">CompTIA CySA+</span><span class="cert-kind">Cybersecurity analyst</span></a></li>
+        <li><a href="comptia_security_plus.pdf" target="_blank" rel="noopener"><span class="cert-name">CompTIA Security+ prep course</span><span class="cert-kind">Coursera</span></a></li>
+        <li><a href="comptia_a_plus_core1.pdf" target="_blank" rel="noopener"><span class="cert-name">CompTIA A+ Core 1 prep course</span><span class="cert-kind">Coursera</span></a></li>
+        <li><a href="comptia_a_plus_core2.pdf" target="_blank" rel="noopener"><span class="cert-name">CompTIA A+ Core 2 prep course</span><span class="cert-kind">Coursera</span></a></li>
+        <li><a href="google_cybersecurity.pdf" target="_blank" rel="noopener"><span class="cert-name">Google Cybersecurity</span><span class="cert-kind">Professional certificate, Coursera</span></a></li>
+        <li><a href="isc2_security_principles.pdf" target="_blank" rel="noopener"><span class="cert-name">ISC2 Security Principles</span><span class="cert-kind">Course, Coursera</span></a></li>
+        <li><a href="homeland_security_cybersecurity.pdf" target="_blank" rel="noopener"><span class="cert-name">Homeland Security & Cybersecurity</span><span class="cert-kind">University of Colorado, Coursera</span></a></li>
+      </ul>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-      <h2 class="section-title">About</h2>
-      <p>I’ve spent the last 8+ years in healthcare. I started as a medical assistant, worked my way up to running operations across three offices for a behavioral health practice, and now I coordinate surgeries for a podiatry practice in Manhattan. Every one of those jobs came down to the same two things: keep patient data safe, and make messy processes actually work.</p>
-      <p>That’s how I ended up in security. I was already the one handling HIPAA, system access, and training every new hire on how to handle patient info, so I went and got the certs to back it up. The projects here are me getting hands-on with the technical side.</p>
-      <p>I also like building things that save people time. At work I made a tool that fills out our surgery booking sheets and figures out clearance dates so nobody has to do it by hand. Right now I’m finishing my bachelor’s at SNHU in business with a focus on I-O psychology.</p>
+    <section id="about" class="block wrap about">
+      <div class="block-head">
+        <h2>About</h2>
+      </div>
+      <div class="about-body">
+        <p>I’ve spent the last 8+ years in healthcare. I started as a medical assistant, worked my way up to running operations across three offices for a behavioral health practice, and now I coordinate surgeries for a podiatry practice in Manhattan. Every one of those jobs came down to the same two things: keep patient data safe, and make messy processes actually work.</p>
+        <p>That’s how I ended up in security. I was already the one handling HIPAA, system access, and training every new hire on how to handle patient info, so I went and got the certs to back it up. The projects here are me getting hands-on with the technical side.</p>
+        <p>I also like building things that save people time. At work I made a tool that fills out our surgery booking sheets and figures out clearance dates so nobody has to do it by hand. Right now I’m finishing my bachelor’s at SNHU in business with a focus on I-O psychology.</p>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <small>© <span id="year"></span> Kristen Christiansen · Rockland County, NY</small>
-      <a class="footer-link" href="mailto:khchristiansen91@gmail.com">khchristiansen91@gmail.com</a>
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p>Kristen Christiansen, Rockland County, NY</p>
+      <a href="mailto:khchristiansen91@gmail.com">khchristiansen91@gmail.com</a>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
