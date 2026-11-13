@@ -1,5 +1,7 @@
 # AI Security Assistant
 
+> **Status: In progress.** This is the project plan and write-up. The code and files listed below aren't uploaded yet.
+
 This project explores the use of large language models and machine learning to augment incident response and security policy development.
 
 ## Overview
@@ -19,11 +21,11 @@ The assistant is trained on synthetic log datasets and public policy frameworks.
 - openai and pandas libraries (`pip install -r requirements.txt`)
 - An OpenAI API key (or replace with another LLM provider)
 
-## Usage
+## Usage (once uploaded)
 
 Run `python assistant.py --input sample_logs.csv` to generate a summary report. Use the interactive shell to ask follow-up questions.
 
-## Deliverables
+## Planned Deliverables
 
 - `assistant.py` – script demonstrating LLM-based summarization and policy generation.
 - `sample_logs.csv` – synthetic login and HTTP events used for testing.

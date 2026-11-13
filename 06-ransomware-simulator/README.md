@@ -1,6 +1,8 @@
 # Ransomware Simulator & Detection
 
-This project provides a hands‑on look at how ransomware encrypts files and how defenders might respond.  It includes:
+> **Status: In progress.** This is the project plan and write-up. The code and files listed below aren't uploaded yet.
+
+This project provides a hands‑on look at how ransomware encrypts files and how defenders might respond.  It will include:
 
 - `encryptor.py` – a script that traverses a target directory and encrypts all files using a symmetric key.  The key is generated on first run and saved to `key.key`.
 - `decryptor.py` – a companion script that uses the stored key to restore encrypted files to their original state.

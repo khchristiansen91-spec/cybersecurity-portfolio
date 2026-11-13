@@ -1,6 +1,6 @@
 # Cybersecurity Portfolio
 
-This repository hosts four independent projects showcasing my hands-on skills in cybersecurity, from policy and threat modelling to Python automation and machine learning.
+This repository hosts eight cybersecurity projects showcasing my hands-on skills in cybersecurity, from policy and threat modelling to Python automation and machine learning.
 
 ## Projects
 
@@ -16,7 +16,19 @@ This repository hosts four independent projects showcasing my hands-on skills in
 4. **Security Headers Scanner**  
    A CLI tool that checks websites for common HTTP security headers (CSP, HSTS, X-Frame-Options, etc.) and reports missing or insecure configurations. Teaches automation and secure configuration verification.
 
-Each project resides in its own directory with a README and the necessary code files. See each project’s README for setup and usage instructions.
+5. **SQL Injection Demo**  
+   A deliberately vulnerable Flask login and a small exploit script showing how an unsafe SQL query lets an attacker bypass authentication, and how to fix it.
+
+6. **Ransomware Simulator & Detection** *(in progress)*  
+   A safe, lab-only look at how ransomware behaves and how file-integrity monitoring can catch it.
+
+7. **AI Security Assistant** *(in progress)*  
+   A proof-of-concept that uses an LLM to summarize security logs and draft policies.
+
+8. **Hidden Malware Hunt** *(in progress)*  
+   A forensics scenario: finding a stealthy backdoor in network traffic and memory dumps.
+
+Each project has its own folder with a README. Projects 1–5 include working code or reports; 6–8 are planned write-ups with code still to come. See each project’s README for setup and usage instructions.
 
 ## About Me
 
