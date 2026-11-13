@@ -272,3 +272,7 @@ a:hover {
     margin: 0 auto;
   }
 }
+
+/* No photo: center the résumé button under the tagline */
+.hero-inner { grid-template-columns: 1fr; justify-items: center; }
+.hero-actions { justify-content: center; }
