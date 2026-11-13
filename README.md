@@ -1,5 +1,7 @@
 # Cybersecurity Portfolio
 
+Live site: https://khchristiansen91-spec.github.io/cybersecurity-portfolio/
+
 This repository hosts eight cybersecurity projects showcasing my hands-on skills in cybersecurity, from policy and threat modelling to Python automation and machine learning.
 
 ## Projects
@@ -32,7 +34,9 @@ Each project has its own folder with a README. Projects 1–5 include working co
 
 ## About Me
 
-Hi, I'm Kristen, a security enthusiast and artist with a passion for blending creativity and technical expertise. This portfolio demonstrates my ability to analyze threats, design mitigation strategies, and build practical tools. Feel free to explore and reach out if you'd like to collaborate or learn more.
+I'm Kristen. I've spent 8+ years in healthcare operations, from medical assistant to running operations across three offices, and now I coordinate surgeries for a podiatry practice in Manhattan. Protecting patient data and fixing messy processes is what got me into security. These projects are me getting hands-on with the technical side.
+
+See the live site: https://khchristiansen91-spec.github.io/cybersecurity-portfolio/
 
 ## Contributing & License
 
